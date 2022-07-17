@@ -1,0 +1,203 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1400px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-top {
+    height: 40px;
+    background-color: skyblue;
+    position: fixed;
+    top: 0px;
+    align-items: center;
+}
+
+.container-top-icon {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.icon-style {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    top: 50px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    indicator-color: lavender;
+    indicator-size: 6px;
+    indicator-bottom: 20px;
+    indicator-left: 40%;
+    indicator-selected-color: deepskyblue;
+}
+
+.swiperContent {
+    height: 80%;
+    justify-content: center;
+}
+
+.content-annualPrice {
+    height: 42px;
+    background-color: red;
+    align-items: center;
+}
+
+.content-annualPrice-image {
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.content-annualPrice-text {
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.content-title {
+    flex-direction: column;
+    margin: 6px 0px;
+    height: 80px;
+}
+
+.content-title-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-title-content {
+    margin: 0px 3px;
+    color: dimgray;
+    font-size: 16px;
+}
+
+.content-marquee {
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #FA8072;
+}
+
+.content-marquee-image {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.customMarquee {
+    margin-left: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: red;
+    font-family: serif;
+}
+
+.content-flex-direction-column {
+    flex-direction: column;
+}
+
+.content-column-height {
+    height: 30px;
+}
+
+.content-column-size-mar {
+    margin: 6px 15px;
+    font-size: 16px;
+}
+
+.content-column-color {
+    color: #777777;
+}
+
+.content-column-width {
+    width: 95%;
+}
+
+.listSty {
+    margin-top: 5px;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.container-list-title {
+    width: 25%;
+    min-height: 30px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.container-list-content {
+    width: 70%;
+    min-height: 30px;
+    font-size: 18px;
+}
+
+.container-bottom {
+    background-color: red;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bottom-text {
+    color: white;
+    font-size: 20px;
+}
+
+.dialog-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.dialog {
+    flex-direction: column;
+}
+
+.dialog-select {
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    flex-direction: column;
+}
+
+.dialog-select-text {
+    color: #777777;
+    font-size: 20px;
+    margin: 6px 5px 6px 20px;
+}
+
+.dialog-select-picker {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}

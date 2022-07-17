@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="container" show="{{flag === oneFlag}}">
+        <!-- 搜索栏 -->
+        <search hint="{{pageWord.searchKeyWord}}"  focusable="true" />
+       <!-- 标签页 -->
+        <tabs class="tabs" index="0" onchange="change">
+            <!-- 导航栏  -->
+            <tab-bar class="tab-bar" mode="fixed">
+                <text class="tab-text" for="{{item in titleList}}">{{item}}</text>
+            </tab-bar>
+            <!-- 商品列表 -->
+            <tab-content class="tab-content">
+                <div class="item-content" for="{{item in allList}}">
+                    <list class="todo-wrapper">
+                        <list-item for="{{allList}}">
+                            <div class="margin-comm" @click="detailPage">
+                                <div class="todo-total">
+                                    <text class="todo-title">{{$item.title}}</text>
+                                    <text class="todo-content">{{$item.content}}</text>
+                                    <text class="todo-price">
+                                        <span>￥</span>
+                                        <span>{{$item.price}}</span>
+                                    </text>
+                                </div>
+                                <div class="width-comm">
+                                    <image src="{{$item.imgSrc}}" class="container-home-image" />
+                                </div>
+                            </div>
+                        </list-item>
+                    </list>
+                </div>
+            </tab-content>
+        </tabs>
+    </div>
+    <!-- 购物车 -->
+    <div class="container-second" show="{{flag === twoFlag}}">
+        <text class="title">购物车</text>
+        <div class="top-comm flex-direction-column">
+            <div for="{{ latestList }}" class="flex-direction-column">
+                <div class="container-shopping-list">
+                    <image src="{{$item.imageSrc}}" class="container-shopping-list-image"></image>
+                    <div class="container-shopping-list-div">
+                        <text class="container-shopping-list-div-text">{{$item.title}}</text>
+                        <text class="container-shopping-list-div-texts">
+                            <span>{{$item.price}}</span>
+                            <span>元</span>
+                        </text>
+                    </div>
+                    <input class="checkbox" type="checkbox" value="{{$item.index}}" @change="addShopping"></input>
+                </div>
+                <divider class="container-shopping-list-divider"></divider>
+            </div>
+        </div>
+        <!-- 底部的结算栏 -->
+        <div class="container-shopping-bottom" show="{{ flag === twoFlag }}">
+            <text class="container-shopping-list-div-texts-total">
+                <span class="total-price">总价</span>
+                <span class="total-price">{{totalPrice}}</span>
+                <span class="total-price">元</span>
+            </text>
+            <button class="container-shopping-list-button" @click="buy">结算</button>
+        </div>
+    </div>
+    <!--  底部导航栏 -->
+    <div class="container-bottom">
+        <image src="{{icon.buys}}" class="container-bottom-image" @click="clickBuy" />
+        <image src="{{icon.shoppingCarts}}" class="container-bottom-image" @click="clickShoppingCart" />
+    </div>
+</div>
