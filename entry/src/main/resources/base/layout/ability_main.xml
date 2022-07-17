@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:background_element="#FFADD8E6">
+
+            <Image
+                ohos:id="$+id:back_detail"
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:image_src="$graphic:bgback"
+                ohos:end_margin="200vp"
+                ohos:start_margin="20vp"
+                ohos:top_margin="10vp"
+                ohos:bottom_margin="10vp"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:top_margin="20vp">
+
+            <PageSlider
+                ohos:id="$+id:page_slider"
+                ohos:height="0vp"
+                ohos:width="match_parent"
+                ohos:weight="1"
+                />
+
+            <DependentLayout
+                ohos:id="$+id:points"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:top_margin="10vp"
+                ohos:alignment="center">
+
+            </DependentLayout>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="35vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:background_element="red"
+            ohos:top_margin="20vp">
+
+            <Image
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:image_src="$graphic:price"
+                ohos:start_margin="10vp"
+                ohos:layout_alignment="vertical_center"
+                />
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="Special Offer: ￥Price"
+                ohos:text_color="white"
+                ohos:text_size="22fp"
+                ohos:start_margin="10vp"
+                ohos:layout_alignment="vertical_center"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:top_margin="5vp">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="New Arrival: HUAWEI MateBook X Pro 2021"
+                ohos:text_size="16fp"
+                ohos:start_margin="10vp"
+                ohos:layout_alignment="start"
+                />
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="13.9-Inch, 11th Gen Intel® Core™ i7, 16 GB of Memory, 512 GB of Storage, Ultra-slim Business Laptop, 3K FullView Display, Multi-screen Collaboration, Emerald Green"
+                ohos:text_size="12fp"
+                ohos:start_margin="10vp"
+                ohos:layout_alignment="start"
+                ohos:multiple_lines="true"
+                />
+
+
+            <DirectionalLayout
+                ohos:height="25vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:top_margin="5vp"
+                ohos:background_element="#FFFFC0CB">
+
+                <Image
+                    ohos:height="15vp"
+                    ohos:width="15vp"
+                    ohos:image_src="$graphic:shoppingcart"
+                    ohos:start_margin="10vp"
+                    ohos:layout_alignment="vertical_center"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="Rating: 5"
+                    ohos:text_color="red"
+                    ohos:text_size="12fp"
+                    ohos:start_margin="140vp"
+                    ohos:layout_alignment="vertical_center"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="Reviews: 100"
+                    ohos:text_color="red"
+                    ohos:text_size="12fp"
+                    ohos:start_margin="140vp"
+                    ohos:layout_alignment="vertical_center"
+                    />
+
+            </DirectionalLayout>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text=" Shipment:         2-day shipping"
+                ohos:text_size="14fp"
+                ohos:text_color="red"
+                ohos:start_margin="10vp"
+                ohos:top_margin="5vp"
+                ohos:layout_alignment="start"
+                />
+
+            <Text
+                ohos:id="$+id:location"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="    Ship To:         click to choose location"
+                ohos:text_size="14fp"
+                ohos:text_color="red"
+                ohos:start_margin="10vp"
+                ohos:top_margin="5vp"
+                ohos:layout_alignment="start"
+                />
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="Guarantee:         Genuine guaranteed"
+                ohos:text_size="14fp"
+                ohos:start_margin="10vp"
+                ohos:top_margin="5vp"
+                ohos:layout_alignment="start"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:top_margin="10vp">
+
+            <Text
+                ohos:id="$+id:item_title1"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:start_margin="20vp"
+                ohos:text="title1"
+                />
+
+            <Text
+                ohos:id="$+id:item_content1"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:layout_alignment="end"
+                ohos:end_margin="20vp"
+                ohos:top_margin="-13vp"
+                ohos:text="content1"
+                />
+
+            <Text
+                ohos:id="$+id:item_title2"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:start_margin="20vp"
+                ohos:text="title2"
+                />
+
+            <Text
+                ohos:id="$+id:item_content2"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:layout_alignment="end"
+                ohos:end_margin="20vp"
+                ohos:top_margin="-13vp"
+                ohos:text="content2"
+                />
+
+            <Text
+                ohos:id="$+id:item_title3"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:start_margin="20vp"
+                ohos:text="title3"
+                />
+
+            <Text
+                ohos:id="$+id:item_content3"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12vp"
+                ohos:layout_alignment="end"
+                ohos:end_margin="20vp"
+                ohos:top_margin="-13vp"
+                ohos:text="content3"
+                />
+        </DirectionalLayout>
+
+        <Button
+            ohos:id="$+id:btn_add_to_cart"
+            ohos:height="30vp"
+            ohos:width="match_parent"
+            ohos:text="Buy"
+            ohos:text_size="20fp"
+            ohos:text_color="white"
+            ohos:top_margin="20vp"
+            ohos:background_element="red"
+            />
+
+    </DirectionalLayout>
+
+</ScrollView>
